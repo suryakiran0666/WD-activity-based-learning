@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamStay Hotel Reservation</title>
+    <link rel="stylesheet" href="hotel reservation case3.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Royal palace Hotel</h1>
+        <p>Your comfort, our priority!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#booking">Book Now</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to DreamStay Hotel</h2>
+        <p>Enjoy luxury, comfort, and unforgettable experiences.</p>
+        <a href="#booking" class="btn">Reserve Your Room</a>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking" id="booking">
+        <h2>Book Your Stay</h2>
+
+        <form action="#" method="get">
+            <div class="form-group">
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <select id="guests" name="guests">
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="room">Room Category:</label>
+                <select id="room" name="room">
+                    <option value="standard">Standard Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Luxury Suite</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn">Check Availability</button>
+        </form>
+    </section>
+
+    <!-- Room Categories -->
+    <section class="rooms" id="rooms">
+        <h2>Our Room Categories</h2>
+
+        <div class="room-container">
+
+            <!-- Standard Room -->
+            <div class="room-card">
+                <img
+                    src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800"
+                    alt="Standard hotel room">
+
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <p>A comfortable room for a relaxing stay.</p>
+                    <p class="price">₹999 / full day</p>
+                    <p>🛏️ Comfortable Bed</p>
+                    <p>📶 Free Wi-Fi</p>
+                    <p>❄️ Air Conditioning</p>
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Deluxe Room -->
+            <div class="room-card">
+                <img
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+                    alt="Deluxe hotel room">
+
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p>A spacious room with premium comfort.</p>
+                    <p class="price">₹799 morning</p>
+                    <p>🛏️ King-Size Bed</p>
+                    <p>📺 Smart Television</p>
+                    <p>🍽️ Room Service</p>
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Luxury Suite -->
+            <div class="room-card">
+                <img
+                    src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800"
+                    alt="Luxury hotel suite">
+
+                <div class="room-info">
+                    <h3>Luxury Suite</h3>
+                    <p>Experience luxury with extra space and style.</p>
+                    <p class="price">₹1499 night</p>
+                    <p>🛋️ Separate Living Area</p>
+                    <p>🛁 Premium Bathroom</p>
+                    <p>🍳 Complimentary Breakfast</p>
+                    <a href="#booking" class="btn">Book Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities" id="facilities">
+        <h2>Hotel Facilities</h2>
+
+        <div class="facility-container">
+            <div class="facility">📶 Free Wi-Fi</div>
+            <div class="facility">🏊 Swimming Pool</div>
+            <div class="facility">🍽️ Restaurant</div>
+            <div class="facility">🚗 Free Parking</div>
+            <div class="facility">💪 Fitness Center</div>
+            <div class="facility">🛎️ 24/7 Room Service</div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact: royal palace@gmail.com | Phone: 98765 43210</p>
+        <p>&copy; 2026 royal palace Hotel. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

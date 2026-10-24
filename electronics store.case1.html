@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroStore</title>
+    <link rel="stylesheet" href="electronics store.case 1.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ElectroStore</h1>
+        <p>Your One-Stop Electronics Shop</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#comparison">Compare</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h2>Latest Electronics at Best Prices</h2>
+        <p>Discover laptops, smartphones, accessories and smart devices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <h2>Shop by Category</h2>
+
+        <div class="categories">
+            <a href="#laptops">Laptops</a>
+            <a href="#phones">Smartphones</a>
+            <a href="#accessories">Accessories</a>
+            <a href="#smart">Smart Devices</a>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products">
+        <h2>Our Products</h2>
+
+        <div class="product-container">
+
+            <!-- Laptop -->
+            <div class="product" id="laptops">
+                <span class="discount">20% OFF</span>
+                <img src="https://m.media-amazon.com/images/I/71qeL9SvpeL._AC_UF1000,1000_QL80_.jpg"
+                     alt="Laptop">>
+                <h3>HP Laptop</h3>
+                <p>Intel Core i5, 8GB RAM, 512GB SSD</p>
+                <p class="price">₹49,999</p>
+                <p class="old-price">₹62,499</p>
+                <a href="#laptop-details" class="btn">View Details</a>
+            </div>
+
+            <!-- Smartphone -->
+            <div class="product" id="phones">
+                <span class="discount">15% OFF</span>
+                <img src="https://m-cdn.phonearena.com/images/article/99269-wide-two_1200/Best-Samsung-phones-in-2026.jpg"
+               <h3>samsung phone</h3>
+                <p>8GB RAM, 256GB Storage, 5G</p>
+                <p class="price">₹28,999</p>
+                <p class="old-price">₹32,999</p>
+                <a href="#phone-details" class="btn">View Details</a>
+            </div>
+
+            <!-- Headphones -->
+            <div class="product" id="accessories">
+                <span class="discount">25% OFF</span>
+                <img src="https://m.media-amazon.com/images/I/61PE7EHb++L._AC_UF1000,1000_QL80_.jpg"
+                <h3>Wireless Headphones</h3>
+                <p>Bluetooth, Noise Reduction</p>
+                <p class="price">₹1,499</p>
+                <p class="old-price">₹1,999</p>
+                <a href="#headphone-details" class="btn">View Details</a>
+            </div>
+
+            <!-- Smart Watch -->
+            <div class="product" id="smart">
+                <span class="discount">10% OFF</span>
+                <img src="https://sc04.alicdn.com/kf/H130595eba12e4490ad7621527dc4c93eA.jpg"
+                     alt="Smart watch">
+                <h3>Smart Watch</h3>
+                <p>Heart Rate Monitor, Fitness Tracking</p>
+                <p class="price">₹2,699</p>
+                <p class="old-price">₹2,999</p>
+                <a href="#watch-details" class="btn">View Details</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section id="details">
+        <h2>Product Specifications</h2>
+
+        <div class="details-box" id="laptop-details">
+            <h3>HP Laptop</h3>
+            <p>Processor: Intel Core i5</p>
+            <p>RAM: 8GB</p>
+            <p>Storage: 512GB SSD</p>
+            <p>Display: 15.6 inches</p>
+        </div>
+
+        <div class="details-box" id="phone-details">
+            <h3>Samsung Smartphone</h3>
+            <p>RAM: 8GB</p>
+            <p>Storage: 256GB</p>
+            <p>Network: 5G</p>
+            <p>Display: AMOLED</p>
+        </div>
+
+        <div class="details-box" id="headphone-details">
+            <h3>Wireless Headphones</h3>
+            <p>Connectivity: Bluetooth</p>
+            <p>Feature: Noise Reduction</p>
+            <p>Design: Wireless Over-Ear</p>
+        </div>
+
+        <div class="details-box" id="watch-details">
+            <h3>Smart Watch</h3>
+            <p>Features: Fitness Tracking</p>
+            <p>Health: Heart Rate Monitoring</p>
+            <p>Connectivity: Bluetooth</p>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section id="comparison">
+        <h2>Product Comparison</h2>
+
+        <table>
+            <tr>
+                <th>Feature</th>
+                <th>HP Laptop</th>
+                <th>Samsung Phone</th>
+                <th>Smart Watch</th>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>8GB</td>
+                <td>8GB</td>
+                <td>Not specified</td>
+            </tr>
+            <tr>
+                <td>Storage</td>
+                <td>512GB SSD</td>
+                <td>128GB</td>
+                <td>Not specified</td>
+            </tr>
+            <tr>
+                <td>Connectivity</td>
+                <td>Wi-Fi</td>
+                <td>5G</td>
+                <td>Bluetooth</td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td>₹49,999</td>
+                <td>₹25,499</td>
+                <td>₹2,699</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <h2>ElectroStore</h2>
+        <p>Email: support@electrostore.com</p>
+        <p>Phone: 98765 43210</p>
+        <p>&copy; 2026 ElectroStore. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```

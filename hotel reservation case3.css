@@ -1,0 +1,256 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #12372a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #f4ce78;
+}
+
+/* Navigation */
+nav {
+    background-color: #1b4332;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4ce78;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600")
+    center/cover;
+
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #d4a64a;
+    color: #172b22;
+    text-decoration: none;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #f4ce78;
+}
+
+/* Booking Section */
+.booking {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.booking h2,
+.rooms h2,
+.facilities h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #12372a;
+}
+
+.booking form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 180px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.booking button {
+    font-size: 15px;
+}
+
+/* Rooms Section */
+.rooms {
+    padding: 35px 5%;
+}
+
+.room-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.room-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-6px);
+}
+
+.room-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 20px;
+}
+
+.room-info h3 {
+    color: #1b4332;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    margin-bottom: 8px;
+}
+
+.price {
+    color: #b47c16;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 12px 0;
+}
+
+/* Facilities */
+.facilities {
+    background-color: #e8efe9;
+    padding: 40px 5%;
+}
+
+.facility-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.facility {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+/* Footer */
+footer {
+    background-color: #12372a;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    .hero {
+        padding: 65px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .booking {
+        padding: 20px;
+    }
+
+    .booking form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .booking button {
+        width: 100%;
+    }
+}
